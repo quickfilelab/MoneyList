@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - MoneyList | QuickFileLab</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) { document.documentElement.setAttribute('data-theme', savedTheme); }
+    </script>
+    <script src="../script/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="../index.html" class="logo">QuickFileLab</a>
+            <button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container fade-in">
+        <a href="index.html" style="display: inline-block; margin-bottom: 20px;">&larr; Back to MoneyList</a>
+        
+        <div class="card" style="margin-bottom: 40px;">
+            <h1>Support Center</h1>
+            <p>We usually respond within <strong>24–48 hours</strong>.</p>
+            <p>Email us at: <a href="mailto:support@quickfilelab.com" style="font-weight: bold;">support@quickfilelab.com</a></p>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+        <div style="margin-top: 20px;">
+            <details>
+                <summary>How to restore Premium?</summary>
+                <p>Ensure you are logged into the Google Play Store with the same account you used to make the purchase. Go to the Settings page inside MoneyList and tap "Restore Purchases".</p>
+            </details>
+            <details>
+                <summary>How to backup data?</summary>
+                <p>Navigate to Settings > Backup & Restore. Tap on "Create Backup" and save the generated file to a safe location on your device or upload it to your personal cloud storage.</p>
+            </details>
+            <details>
+                <summary>How to change currency?</summary>
+                <p>Go to the main Settings menu within the app, tap on "Currency & Formatting", and select your preferred default currency symbol.</p>
+            </details>
+            <details>
+                <summary>How to contact support?</summary>
+                <p>You can reach us anytime by emailing support@quickfilelab.com. Please include your app version and device model to help us troubleshoot faster.</p>
+            </details>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> QuickFileLab. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
