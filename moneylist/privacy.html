@@ -1,54 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - MoneyList | QuickFileLab</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <script>
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) { document.documentElement.setAttribute('data-theme', savedTheme); }
-    </script>
-    <script src="../script/main.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for MoneyList: Expense Tracker by QuickFileLab, including local records, optional notification detection, backups and Google services.">
+  <meta name="theme-color" content="#5942d6">
+  <title>MoneyList Privacy Policy | QuickFileLab</title>
+  <style>
+    :root { color-scheme: light; --purple: #5942d6; --text: #253047; --muted: #596579; --border: #e3e7f0; }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 24px; }
+    body { margin: 0; background: #f5f6fb; color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 16px; line-height: 1.75; }
+    .page { width: min(920px, calc(100% - 32px)); margin: 40px auto; padding: clamp(20px, 5vw, 48px); background: #fff; border: 1px solid var(--border); border-radius: 22px; }
+    header { border-bottom: 1px solid var(--border); padding-bottom: 22px; margin-bottom: 28px; }
+    .brand { color: var(--purple); font-weight: 700; margin: 0 0 4px; }
+    h1 { font-size: clamp(30px, 5vw, 42px); line-height: 1.2; margin: 8px 0 12px; letter-spacing: -.03em; }
+    h2 { font-size: 23px; line-height: 1.35; margin: 0 0 12px; }
+    h3 { font-size: 18px; margin: 22px 0 8px; }
+    p { margin: 0 0 14px; }
+    .dates, footer { color: var(--muted); font-size: 14px; }
+    .summary { background: #f0edff; border-left: 4px solid var(--purple); padding: 18px 20px; border-radius: 12px; margin: 24px 0; }
+    .summary p:last-child { margin-bottom: 0; }
+    nav { padding: 18px 20px; border: 1px solid var(--border); border-radius: 12px; margin-bottom: 30px; }
+    nav ol { margin: 8px 0 0; padding-left: 22px; columns: 2; column-gap: 28px; }
+    nav li { break-inside: avoid; margin-bottom: 4px; }
+    section { margin-bottom: 32px; }
+    ul, ol { padding-left: 24px; }
+    li { margin-bottom: 8px; }
+    a { color: #4832bb; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    a:hover { color: #2d1d8c; }
+    a:focus-visible { outline: 3px solid #4a90e2; outline-offset: 4px; border-radius: 2px; }
+    .note { padding: 14px 18px; background: #edf6ff; border: 1px solid #cfe6fa; border-radius: 12px; }
+    footer { border-top: 1px solid var(--border); padding-top: 20px; }
+    @media (max-width: 600px) { .page { margin: 16px auto; border-radius: 16px; } nav ol { columns: 1; } }
+    @media print { body { background: #fff; } .page { width: 100%; margin: 0; padding: 0; border: 0; } nav { display: none; } a { color: inherit; } h2, h3 { break-after: avoid; } }
+  </style>
 </head>
 <body>
+  <main class="page">
     <header>
-        <div class="container header-content">
-            <a href="../index.html" class="logo">QuickFileLab</a>
-            <button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button>
-        </div>
+      <p class="brand">QuickFileLab &middot; MoneyList: Expense Tracker</p>
+      <h1>Privacy Policy</h1>
+      <p class="dates"><strong>Effective date:</strong> October 5, 2026<br>
+        <strong>Last updated:</strong> October 5, 2026<br>
+        <strong>Originally published:</strong> July 1, 2026</p>
+      <p>This policy explains how QuickFileLab ("we", "us" or "our") handles information when you use the MoneyList Android application.</p>
     </header>
 
-    <main class="container fade-in">
-        <a href="index.html" style="display: inline-block; margin-bottom: 20px;">&larr; Back to MoneyList</a>
-        <div class="card">
-            <h1>Privacy Policy</h1>
-            <p><strong>Effective Date:</strong> July 1, 2026</p>
-            
-            <h3>1. Data Storage & Privacy</h3>
-            <p>At QuickFileLab, we prioritize your privacy. <strong>All your financial data is stored locally on your device.</strong> We do not have access to your personal financial records, nor do we store them on external servers unless you explicitly choose to export and save a backup.</p>
+    <aside class="summary" aria-label="Privacy summary">
+      <p><strong>Your financial records are stored on your device.</strong> Optional transaction detection processes notification text on your device and does not upload that text through the detection feature.</p>
+      <p>MoneyList also uses Google services for analytics, crash reporting, purchases and advertising functionality. Some app events contain financial amounts and categories and are sent to Firebase. Local storage does not mean that all app data stays on your device.</p>
+    </aside>
 
-            <h3>2. Third-Party Services</h3>
-            <p>To improve app performance and provide specific functionalities, MoneyList uses the following third-party services which may collect anonymized usage data:</p>
-            <ul style="margin-left: 20px; margin-bottom: 16px; color: var(--text-muted);">
-                <li><strong>Firebase Analytics:</strong> To understand how the app is used and improve user experience.</li>
-                <li><strong>Firebase Crashlytics:</strong> To detect and fix crashes and technical issues.</li>
-                <li><strong>Google Play Billing:</strong> To securely process premium feature purchases.</li>
-                <li><strong>Google AdMob:</strong> May be integrated in future versions to serve advertisements.</li>
-            </ul>
+    <nav aria-label="Policy contents">
+      <strong>Contents</strong>
+      <ol>
+        <li><a href="#local-records">Local records and preferences</a></li>
+        <li><a href="#notification-detection">Auto detect transactions</a></li>
+        <li><a href="#google-services">Google services and data processing</a></li>
+        <li><a href="#permissions">Permissions and device features</a></li>
+        <li><a href="#backups">Backups, reports and sharing</a></li>
+        <li><a href="#retention">Retention and deletion</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#choices">Your choices and requests</a></li>
+        <li><a href="#changes">Policy changes</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ol>
+    </nav>
 
-            <h3>3. Backup & Restore</h3>
-            <p>MoneyList offers a Local Backup & Restore feature. These backup files are created and stored entirely on your local device storage. You are responsible for the security of these files.</p>
+    <section id="local-records">
+      <h2>1. Local records and preferences</h2>
+      <p>MoneyList stores the records needed for its features in local app storage, including:</p>
+      <ul>
+        <li>Expenses, income, transfers, amounts, dates, titles, notes and transaction history.</li>
+        <li>Financial accounts or wallets, balances, categories, budgets and Quick Add Templates.</li>
+        <li>Reminders, recurring transactions, savings goals and contributions.</li>
+        <li>Borrow/lend records, debt payments, and contact information you enter, such as names and phone numbers.</li>
+        <li>Receipts, photos or documents you choose to attach, and preferences such as currency, monthly cycle and app security settings.</li>
+      </ul>
+      <p>These records support tracking, calculations, reminders, filtering and reports. MoneyList does not require a MoneyList online login account. Financial accounts created inside the app are tracking records; creating one does not connect MoneyList to your bank.</p>
+      <p>QuickFileLab does not operate a cloud service that automatically stores a copy of your complete financial database. However, selected analytics events, diagnostic reports, purchases, exports and Android backups are handled as described below.</p>
+    </section>
 
-            <h3>4. Contact Us</h3>
-            <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at: <a href="mailto:support@quickfilelab.com">support@quickfilelab.com</a></p>
-        </div>
-    </main>
+    <section id="notification-detection">
+      <h2>2. Auto detect transactions</h2>
+      <p><strong>This feature is optional and off by default.</strong> It is also called Automatic Transactions in some app screens. Before enabling it, MoneyList presents a disclosure and asks you to continue before opening Android's Notification Access settings. Manual tracking works without this access.</p>
 
-    <footer>
-        <div class="container">
-            <p>&copy; <script>document.write(new Date().getFullYear())</script> QuickFileLab. All rights reserved.</p>
-        </div>
-    </footer>
+      <h3>What notification access allows</h3>
+      <p>After you consent and grant Android Notification Access, MoneyList can receive notification titles and text from other apps in the background, including while MoneyList is closed. This access can expose sensitive notification content. MoneyList processes it to identify supported financial alerts, including bank or payment alerts displayed by Messages and email apps, and ignores unrelated notifications.</p>
+      <p>MoneyList does not request READ_SMS or RECEIVE_SMS, read your SMS inbox, sign into your email account, read your email inbox, or use an Accessibility service for this feature. Reading a notification from a Messages or email app is different from accessing that app's inbox.</p>
+
+      <h3>Processing and local storage</h3>
+      <p>Notification parsing happens on your device. The detection feature does not save full notification bodies or upload notification text to QuickFileLab, an AI service, advertising providers or analytics services. It does not store full account/card numbers or credentials extracted from notifications.</p>
+      <p>For supported alerts, MoneyList may store extracted amount and currency, merchant or transaction title, masked account ending, date/time, source app, review status and hashed identifiers locally. Hashes help identify duplicates and notification formats. Your selected account, category, transaction type and reviewed amount may also be saved as part of the review process.</p>
+
+      <h3>Review and remembered choices</h3>
+      <p>Review before adding is the default. Uncertain amounts, currencies or transaction types require manual review. MoneyList does not automatically convert currencies. Optional Auto Add applies only to eligible transactions matching rules you enable; uncertain items remain subject to review.</p>
+      <p>Remembering an account/category choice or notification format requires your explicit selection. Format rules store a structure hash, source app, currency, masked account ending and approved choices locally, rather than the original notification text. Remembered format rules provide suggestions and still require review.</p>
+      <p>When you approve an item, it becomes an ordinary financial record and follows the app's normal history, deletion, report and backup behavior. Entries added through the notification review/Auto Add path skip the income/expense creation analytics event. Other app usage and diagnostic services described in this policy can still operate.</p>
+
+      <h3>Recent alerts and controls</h3>
+      <p>The app may check recent notifications that are still visible when the listener connects. The <strong>Check recent bank alerts</strong> action examines currently visible notifications from the preceding 24 hours. This does not provide access to dismissed notification history, old SMS messages or full emails. Hidden or truncated details may not be detected.</p>
+      <p>You can turn detection off under <strong>Settings &rarr; Auto detect transactions</strong>, or revoke MoneyList's Notification Access in Android settings. Previously saved review items and rules can be managed using the separate history and rule controls described below.</p>
+    </section>
+
+    <section id="google-services">
+      <h2>3. Google services and data processing</h2>
+      <p>MoneyList includes third-party SDKs that can send data to Google. These services may use installation, app-instance or advertising identifiers, so their data should not be assumed to be completely anonymous. QuickFileLab can receive analytics and diagnostic reports through the configured service dashboards.</p>
+
+      <h3>Firebase Analytics</h3>
+      <p>Firebase Analytics helps us understand feature use and improve MoneyList. It processes app usage, screen/session events, app and device information, identifiers and approximate location information derived from network data, depending on Google's service behavior and configuration.</p>
+      <p><strong>Some existing app events include financial details:</strong> income/expense creation events contain the amount and category; transfer events can contain the amount; and budget creation events contain the budget amount, period and repeat setting. Standard transaction creation paths can be used by manual entry, Quick Add, recurring transactions, savings and debt features. The notification detection entry path skips its income/expense creation event.</p>
+      <p>Other events can include account type, reminder or template type, selected currency, filters, theme, security-option status and purchase outcomes. Consequently, it would be inaccurate to describe MoneyList as sending only anonymous usage information or no financial information to Firebase.</p>
+      <p>Details: <a href="https://support.google.com/analytics/answer/11593727?hl=en" target="_blank" rel="noopener noreferrer">Google Analytics data collection</a> and <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase privacy information</a>.</p>
+
+      <h3>Firebase Crashlytics</h3>
+      <p>Crashlytics helps diagnose crashes and errors. Reports can contain error messages, stack traces, relevant app state, app/operating-system versions, device information and installation identifiers. Analytics activity breadcrumbs may accompany crash reports when the services are enabled. These reports are processed by Firebase, rather than stored exclusively on your device.</p>
+      <p>Details: <a href="https://firebase.google.com/docs/android/play-data-disclosure#crashlytics" target="_blank" rel="noopener noreferrer">Firebase Crashlytics data disclosure</a>.</p>
+
+      <h3>Google Mobile Ads / AdMob</h3>
+      <p>The Google Mobile Ads SDK is already included and initialized in MoneyList. Banner display is currently disabled in the build covered by this update; this does not mean that the SDK is absent or that all SDK processing is disabled.</p>
+      <p>Depending on SDK operation and configuration, Google advertising services may process IP addresses, approximate location inferred from IP addresses, device/app identifiers, app or ad interactions and diagnostic information for advertising, measurement and fraud prevention. MoneyList's notification detection feature does not provide notification text or extracted detection details to AdMob.</p>
+      <p>Details: <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">Google Mobile Ads data disclosure</a>.</p>
+
+      <h3>Google Play Billing</h3>
+      <p>Google Play processes Premium purchases and handles payment information under Google's policies. MoneyList receives purchase-related information, such as product/purchase identifiers, purchase status and verification information, to unlock or restore Premium and complete purchases. MoneyList does not receive your payment card number or banking password from Google Play Billing.</p>
+
+      <h3>Provider policies and processing locations</h3>
+      <p>Google services handle the data they receive under their applicable terms, privacy policies and settings. Processing can occur in countries other than your own. For more information, see the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase privacy and security information</a>.</p>
+    </section>
+
+    <section id="permissions">
+      <h2>4. Permissions and device features</h2>
+      <ul>
+        <li><strong>Notifications and reminder scheduling:</strong> used to display reminders and transaction actions. Android alarm, reboot and related background capabilities support reminder scheduling and restoration. Reminder text may appear on your lock screen according to your device settings.</li>
+        <li><strong>Optional Notification Access:</strong> used only after disclosure and consent for the transaction detection feature described above.</li>
+        <li><strong>Camera, photos and selected files:</strong> used when you capture or select receipts, attachments, contact photos, backups or other files. Older Android versions may require storage access for these operations.</li>
+        <li><strong>Biometric authentication:</strong> optional app unlocking uses Android's authentication system. MoneyList does not receive or store fingerprint images, face templates or other biometric templates. The PIN setting is stored locally.</li>
+        <li><strong>Internet:</strong> used by the integrated Google services and when you open external links or services.</li>
+      </ul>
+      <p>When you choose to share a report or launch a call/message action, the selected external app handles the information passed to it under its own policies. You can manage runtime permissions, notification visibility, advertising-ID controls and backup settings through Android settings; available controls vary by Android version.</p>
+    </section>
+
+    <section id="backups">
+      <h2>5. Backups, reports and sharing</h2>
+      <p>MoneyList lets you export financial backups and generate PDF/Excel reports. Backup archives can include financial records, contact/debt information and referenced attachments. The app saves or shares these files to the destination you choose through the device's file/share interface.</p>
+      <p>A destination can be local storage, another app or a cloud-backed document provider. If you choose a cloud location or share a file, it can leave your device and the receiving service's policies apply. MoneyList does not automatically upload these exports to a QuickFileLab backup server.</p>
+      <p><strong>Exported backups and reports are not automatically password-protected or encrypted by MoneyList.</strong> You control where copies are stored, who receives them and when they are deleted. App deletion does not remove separately saved or shared copies.</p>
+      <p>Depending on your device and settings, Android's own backup or device-transfer service may also include ordinary app records and preferences. This operates separately from MoneyList's manual export feature.</p>
+      <p>Detection metadata, matching rules, detection consent and recovery metadata are excluded from MoneyList's financial exports and the configured Android backup/device-transfer rules. Approved transactions remain ordinary records and can be included. Restoring a financial backup disables detection and clears device-local detection data; enabling it again requires a fresh opt-in.</p>
+    </section>
+
+    <section id="retention">
+      <h2>6. Retention and deletion</h2>
+      <ul>
+        <li><strong>Financial records:</strong> retained locally until you delete them or remove the app's data. <strong>Settings &rarr; Wipe All Data</strong> clears the financial record databases and detection data.</li>
+        <li><strong>Native detection captures:</strong> limited to 5,000 items and eligible for expiry after 30 days when queue processing runs. Older captures may be removed when the limit is reached.</li>
+        <li><strong>Pending and completed detection history:</strong> cleaned up after 30 days when MoneyList processes it. Unfinished or uncertain saves and recovery records may remain to avoid corrupting or duplicating financial entries.</li>
+        <li><strong>Detection rules:</strong> kept locally until you delete them or reset app data. Rules can also be disabled without deleting them.</li>
+        <li><strong>Clear detection history:</strong> removes eligible pending/finished detection records and native captures without deleting approved financial transactions or matching rules. Records needed for unresolved saves may be preserved.</li>
+        <li><strong>Settings and private attachments:</strong> to remove all remaining local app files/preferences, use Android's app-storage clearing control or uninstall MoneyList. Separately saved files and Android backup copies must be managed separately and may restore data later.</li>
+        <li><strong>Google service data:</strong> retention depends on the service and configuration described in Google's policies. Clearing MoneyList data does not automatically delete previously transmitted analytics/crash reports or Google Play's purchase records.</li>
+      </ul>
+      <p>If you contact support, we receive your email address and the information or files you choose to send. We use this information to respond, investigate issues and handle follow-up. Contact us to request deletion of support correspondence; some information may need to be retained for legal obligations or ongoing requests.</p>
+    </section>
+
+    <section id="security">
+      <h2>7. Security</h2>
+      <p>MoneyList uses Android's app-private storage and offers optional PIN/biometric unlocking. App Lock limits access through the app interface; it should not be treated as a guarantee that databases, settings or exported files are encrypted. Your device security, lock-screen settings and the storage/sharing destinations you choose also affect protection.</p>
+      <p>No device, storage system or transmission method can be guaranteed completely secure. We do not provide remote recovery of your local financial records if you lose them without an available backup.</p>
+    </section>
+
+    <section id="choices">
+      <h2>8. Your choices and requests</h2>
+      <p>You can use manual tracking without notification detection, revoke Notification Access, review/ignore candidates, manage rules, delete records, export a backup, or clear app data. Android's advertising-ID controls do not disable all analytics, diagnostics or advertising SDK processing.</p>
+      <p>MoneyList's current settings do not provide separate switches to turn off Firebase Analytics or Crashlytics collection. Turning off transaction detection does not turn off these services.</p>
+      <p>Depending on where you live, you may have rights concerning access, correction, deletion or objection to processing of personal information. Contact QuickFileLab using the address below so we can review your request and explain the available options. We cannot remotely access or delete financial records stored only on your device; use the local controls for those records.</p>
+      <p>For information held by Google or another service you select, the provider's privacy controls and request procedures may also apply.</p>
+    </section>
+
+    <section id="changes">
+      <h2>9. Policy changes</h2>
+      <p>We may update this policy as MoneyList's features or data handling change. The revised policy will be published on this page with an updated date. New uses of sensitive information requiring disclosure or consent will be explained through the relevant app flow; publishing this policy alone does not grant Notification Access.</p>
+    </section>
+
+    <section id="contact">
+      <h2>10. Contact us</h2>
+      <p>For privacy questions, concerns or requests concerning <strong>MoneyList: Expense Tracker</strong>, contact:</p>
+      <p><strong>QuickFileLab</strong><br>
+        Email: <a href="mailto:support@quickfilelab.com">support@quickfilelab.com</a></p>
+    </section>
+
+    <footer>MoneyList: Expense Tracker &middot; QuickFileLab &middot; Updated October 5, 2026</footer>
+  </main>
 </body>
 </html>
